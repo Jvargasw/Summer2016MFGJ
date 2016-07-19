@@ -3,11 +3,35 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Advanced Dialogue Box</extension>
+  </NewExtensions>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_mari_neutral</sprite>
+    <sprite>sprites\spr_portrait</sprite>
+    <sprite>sprites\spr_wisp_neutral</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\bg_woods1</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\newChat.gml</script>
+    <script>scripts\newSkit.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\f_chat</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\obj_camera</object>
+    <object>objects\obj_dialogue</object>
+    <object>objects\obj_vndialogue</object>
+    <object>objects\README</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
