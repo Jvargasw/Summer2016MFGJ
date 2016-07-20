@@ -8,15 +8,49 @@
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_mari_neutral</sprite>
-    <sprite>sprites\spr_portrait</sprite>
-    <sprite>sprites\spr_wisp_neutral</sprite>
+    <sprites name="Character Sprites">
+      <sprite>sprites\spr_mari_neutral</sprite>
+      <sprite>sprites\spr_mari_neutral_sweat</sprite>
+      <sprite>sprites\spr_mari_happy</sprite>
+      <sprite>sprites\spr_mari_happy_sweat</sprite>
+      <sprite>sprites\spr_mari_sad</sprite>
+      <sprite>sprites\spr_mari_cry</sprite>
+      <sprite>sprites\spr_mari_sad_sweat</sprite>
+      <sprite>sprites\spr_mari_surprise</sprite>
+      <sprite>sprites\spr_mari_smile</sprite>
+      <sprite>sprites\spr_mari_smile_sweat</sprite>
+      <sprite>sprites\spr_mari_surprise_sweat</sprite>
+      <sprite>sprites\spr_mari_thinking</sprite>
+      <sprite>sprites\spr_mari_thinking_sweat</sprite>
+      <sprite>sprites\spr_wisp_neutral</sprite>
+      <sprite>sprites\spr_wisp_smile</sprite>
+      <sprite>sprites\spr_wisp_happy</sprite>
+      <sprite>sprites\spr_wisp_sad</sprite>
+      <sprite>sprites\spr_wisp_surprise</sprite>
+      <sprite>sprites\spr_wisp_sweat</sprite>
+      <sprite>sprites\spr_pal1_confident</sprite>
+      <sprite>sprites\spr_pal1_neutral</sprite>
+      <sprite>sprites\spr_pal1_terrified</sprite>
+      <sprite>sprites\spr_pal1_uneasy</sprite>
+      <sprite>sprites\spr_pal2_confident</sprite>
+      <sprite>sprites\spr_pal2_neutral</sprite>
+      <sprite>sprites\spr_pal2_terrified</sprite>
+      <sprite>sprites\spr_pal2_uneasy</sprite>
+      <sprite>sprites\spr_lor_cry</sprite>
+      <sprite>sprites\spr_lor_happy</sprite>
+      <sprite>sprites\spr_lor_happy_cry</sprite>
+      <sprite>sprites\spr_lor_smile</sprite>
+      <sprite>sprites\spr_lor_sad</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_woods1</background>
+    <background>background\bg_woods2</background>
+    <background>background\bg_field</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\drawSprite.gml</script>
     <script>scripts\newChat.gml</script>
     <script>scripts\newSkit.gml</script>
   </scripts>
@@ -31,6 +65,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

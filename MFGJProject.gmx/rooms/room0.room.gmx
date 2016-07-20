@@ -11,12 +11,15 @@
   <colour>0</colour>
   <showcolour>0</showcolour>
   <code>//message[0] = "\0Normal  \1Shaky  \2Color  \3Shaky Color  \4Wavy  \5Gradient  \6Wavy Gradient";
-message[0] = "\5Advanced Dialogue Box";
-message[1] = "Not really sure how this works..."
-message[2] = "There's a portrait to use, but I wonder how I can just use a name to display up somewhere?"
-message[3] = "It could be possible!"
+//message[0] = "Mari: Come on you guys, it's just a little further up!"
+message[0] = "M: Does this work?";
+message[1] = "Friend A: This looks like the place";
+message[2] = "We're at the supposedly 'haunted' forest.";
+message[3] = "There were rumors that people would go into the forest and night, never to be seen again."
+message[4] = "And for those lucky enough to make it out claimed they’d seen mysterious orbs of light in the distance, wandering through the trees."
+message[5] = "Some of our pals dared us to spend the night  in the forest. I’m not one to turn down a dare, but...";
 //newChat(message, "mari");
-newSkit(message,2);</code>
+newSkit(message,0);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
