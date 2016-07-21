@@ -113,16 +113,10 @@ if (message_end &gt; 0)
     var space = 0;
     var i = 1;
     //Delay time between printing each character
-    var delay = 1;
-    show_debug_message(numOfPeople);
+    var delay = .5;
+
     
     //character emotion variables
-
-    var emotionMari = spr_mari_neutral;
-    var emotionWisp = spr_wisp_neutral;
-    var emotionPal1 = spr_pal1_neutral;
-    var emotionPal2 = spr_pal2_neutral;
-    var emotionLorelei = spr_lor_smile;
     
     
     //Draw Portrait
@@ -130,26 +124,26 @@ if (message_end &gt; 0)
         {
             case 1:
             {
-                draw_sprite(emotionMari, 0, 250, 600);
+                draw_sprite(global.emotionMari, 0, 250, 600);
                 break;
             }
             case 2:
             {
-                draw_sprite(emotionMari, 0, 0, 600);
-                draw_sprite(emotionWisp, 0, 600, 250);
+                draw_sprite(global.emotionMari, 0, 0, 600);
+                draw_sprite(global.emotionWisp, 0, 600, 250);
                 break;
             }
             case 3:
             {   
-                draw_sprite(emotionPal2,0,500,600);
-                draw_sprite(emotionPal1,0,250,600);
-                draw_sprite(emotionMari,0,0,600);
+                if(global.pal2Visible)draw_sprite(global.emotionPal2,0,500,600);
+                if(global.pal1Visible)draw_sprite(global.emotionPal1,0,250,600);
+                draw_sprite(global.emotionMari,0,0,600);
                 break;
             }
             case 4:
             {
-                draw_sprite(emotionMari, 0, 0, 600);
-                draw_sprite(emotionLorelei, 0, 800, 600);
+                draw_sprite(global.emotionMari, 0, 0, 600);
+                draw_sprite(global.emotionLorelei, 0, 800, 600);
                 break;   
             }    
         }
@@ -215,8 +209,116 @@ if (message_end &gt; 0)
     
     //Expression Change
     if(string_pos("M:",message[message_current])){
-        show_debug_message("does this work?");
-        message_current++;
+
+        if(string_pos("Neutral",message[message_current])){
+            global.emotionMari = spr_mari_neutral;
+            message_current++;
+        }
+        if(string_pos("Neutral Sweat",message[message_current])){
+            global.emotionMari = spr_mari_neutral_sweat;
+            message_current++;
+        }
+        if(string_pos("Happy",message[message_current])){
+            global.emotionMari = spr_mari_happy;
+            message_current++;
+        }
+        if(string_pos("Happy Sweat",message[message_current])){
+            global.emotionMari = spr_mari_happy_sweat;
+            message_current++;
+        }
+        if(string_pos("Sad",message[message_current])){
+            global.emotionMari = spr_mari_sad;
+            message_current++;
+        }
+        if(string_pos("Cry",message[message_current])){
+            global.emotionMari = spr_mari_cry;
+            message_current++;
+        }
+        if(string_pos("Sad Sweat",message[message_current])){
+            global.emotionMari = spr_mari_sad_sweat;
+            message_current++;
+        }
+        if(string_pos("Surprise",message[message_current])){
+            global.emotionMari = spr_mari_surprise;
+            message_current++;
+        }
+        if(string_pos("Smile",message[message_current])){
+            global.emotionMari = spr_mari_smile;
+            message_current++;
+        }
+        if(string_pos("Smile Sweat",message[message_current])){
+            global.emotionMari = spr_mari_smile_sweat;
+            message_current++;
+        }
+        if(string_pos("Surprise Sweat",message[message_current])){
+            global.emotionMari = spr_mari_surprise_sweat;
+            message_current++;
+        }
+        if(string_pos("Thinking",message[message_current])){
+            global.emotionMari = spr_mari_thinking;
+            message_current++;
+        }
+        if(string_pos("Thinking Sweat",message[message_current])){
+            global.emotionMari = spr_mari_thinking_sweat;
+            message_current++;
+        }
+        if(string_pos("Invisible",message[message_current])){
+            global.mariVisible = false;
+            message_current++;
+        }
+        if(string_pos("Visible",message[message_current])){
+            global.mariVisible = true;
+            message_current++;
+        }      
+        
+    }
+    
+    else if(string_pos("B:",message[message_current])){
+
+        if(string_pos("Confident",message[message_current])){
+            global.emotionPal1 = spr_pal1_confident;
+            message_current++;
+        }
+        if(string_pos("Neutral",message[message_current])){
+            global.emotionPal1 = spr_pal1_neutral;
+            message_current++;
+        }
+        if(string_pos("Terrified",message[message_current])){
+            global.emotionPal1 = spr_pal1_terrified;
+            message_current++;
+        }
+        if(string_pos("Uneasy",message[message_current])){
+            global.emotionPal1 = spr_pal1_uneasy;
+            message_current++;
+        }
+        if(string_pos("Invisible",message[message_current])){
+            global.pal1Visible = false;
+            message_current++;
+        } 
+    }
+    
+    else if(string_pos("A:",message[message_current])){
+
+        if(string_pos("Confident",message[message_current])){
+            global.emotionPal2 = spr_pal2_confident;
+            message_current++;
+        }
+        if(string_pos("Neutral",message[message_current])){
+            global.emotionPal2 = spr_pal2_neutral;
+            message_current++;
+        }
+        if(string_pos("Terrified",message[message_current])){
+            global.emotionPal2 = spr_pal2_terrified;
+            message_current++;
+        }
+        if(string_pos("Uneasy",message[message_current])){
+            global.emotionPal2 = spr_pal2_uneasy;
+            message_current++;
+        } 
+        if(string_pos("Invisible",message[message_current])){
+            global.pal2Visible = false;
+            message_current++;
+        }  
     }
     
     //Text
@@ -302,7 +404,6 @@ if (message_end &gt; 0)
         space++;
         i++;
     }
-    
     
     
 }

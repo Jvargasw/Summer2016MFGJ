@@ -10,25 +10,53 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>0</showcolour>
-  <code>//message[0] = "\0Normal  \1Shaky  \2Color  \3Shaky Color  \4Wavy  \5Gradient  \6Wavy Gradient";
-message[0] = "VFriend B: Alright! I'm ready for this!";
-message[1] = "Friend A: You sure? You were kinda fidgety while we were walking up.";
-message[2] = "Friend A: You scared?";
-message[3] = "Friend B: N-no way! I’m just riling myself up to get ready for this awesome night!";
-message[4] = "Friend B: And weren’t you clinging onto both of us on the way?! You’re scared too!";
-message[5] = "Friend A: No way! ...You’re just imagining things."
-message[6] = "Well, we might as well head in since you two are excited to get going!";
-message[7] = "Friend B: W-wait…!";
-message[8] = "Friend A: ?!";
-message[9] = "Mari: What's up guys?";
-message[10] = "\1Friend B: I-I-I saw….I saw them…";
-message[11] = "Friend A: S-saw what??";
-message[12] = "I look to where my two friends seemed to be staring at into the forest. But all I saw was darkness.";
-message[13] = "\1Friend B: You didn’t see them? L-l-lights!!";
-message[14] = "Friend A: M-maybe they’re just flashlights…";
-message[15] = "\1Friend B: N-no! They were...just floating there…!";
-message[16]= "\1Friend B: I can’t do it! I’m a wuss, but at least I want to stay alive!"
-message[17] = "1\1Friend A: Wait for me…!!! Don’t leave me here!!!";
+  <code>global.emotionMari = spr_mari_neutral;
+global.motionWisp = spr_wisp_neutral;
+global.emotionPal1 = spr_pal1_neutral;
+global.emotionPal2 = spr_pal2_neutral;
+global.emotionLorelei = spr_lor_smile;
+
+global.mariVisible = true;
+global.pal1Visible = true;
+global.pal2Visible = true;
+global.wispVisible = true;
+global.lorVisible = true;
+
+//message[0] = "\0Normal  \1Shaky  \2Color  \3Shaky Color  \4Wavy  \5Gradient  \6Wavy Gradient";
+message[0] = "B: Confident";
+message[1] = "Friend A: Alright! I'm ready for this!";
+message[2] = "Friend B: You sure? You were kinda fidgety while we were walking up.";
+message[3] = "Friend B: You scared?";
+message[4] = "B: Uneasy";
+message[5] = "Friend A: N-no way! I'm just riling myself up to get ready for this awesome night!";
+message[6] = "B: Neutral";
+message[7] = "Friend A: And weren't you clinging onto both of us on the way?! You're scared too!";
+message[8] = "A: Uneasy";
+message[9] = "Friend B: No way! ...You're just imagining things."
+message[10] = "A: Neutral";
+message[11] = "M: Happy";
+message[12] = "Mari: Well, we might as well head in since you two are excited to get going!";
+message[13] = "B: Uneasy";
+message[14] = "Friend A: W-wait...!";
+message[15] = "A: Uneasy";
+message[16] = "Friend B: ?!";
+message[17] = "M: Neutral";
+message[18] = "Mari: What's up guys?";
+message[19] = "Friend A: \1I-I-I saw...I saw them...";
+message[20] = "Friend B: S-saw what??";
+message[21] = "I look to where my two friends seemed to be staring at into the forest. But all I saw was darkness.";
+message[22] = "B: Terrified";
+message[23] = "Friend A: \1You didn't see them? L-l-lights!!";
+message[24] = "Friend B: M-maybe they're just flashlights...";
+message[25] = "Friend A: \1N-no! They were...just floating there...!";
+message[26]= "Friend A: \1I can't do it! I'm a wuss, but at least I want to stay alive!"
+message[27] = "B: Invisible";
+message[28] = "A: Terrified";
+message[29] = "Friend B: \1Wait for me...!!! Don't leave me here!!!";
+message[30] = "A: Invisible";
+message[31] = "Mari: Really? Both of them just up and left me here? Oh well. I kinda want to explore some more."
+message[32] = "M: Smile";
+message[33] = "Mari: Maybe I'll see something really cool!";
 //newChat(message, "mari");
 newSkit(message,3);</code>
   <enableViews>0</enableViews>

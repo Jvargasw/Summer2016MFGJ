@@ -11,13 +11,12 @@
   <colour>0</colour>
   <showcolour>0</showcolour>
   <code>//message[0] = "\0Normal  \1Shaky  \2Color  \3Shaky Color  \4Wavy  \5Gradient  \6Wavy Gradient";
-//message[0] = "Mari: Come on you guys, it's just a little further up!"
-message[0] = "M: Does this work?";
-message[1] = "Friend A: This looks like the place";
+message[0] = "Mari: Come on you guys, it's just a little further up!"
+message[1] = "Friend B: This looks like the place.";
 message[2] = "We're at the supposedly 'haunted' forest.";
-message[3] = "There were rumors that people would go into the forest and night, never to be seen again."
-message[4] = "And for those lucky enough to make it out claimed they’d seen mysterious orbs of light in the distance, wandering through the trees."
-message[5] = "Some of our pals dared us to spend the night  in the forest. I’m not one to turn down a dare, but...";
+message[3] = "There were rumors that people would go into the forest at night, and were never to be seen again."
+message[4] = "And for those lucky enough to make it out claimed they'd seen mysterious orbs of light in the distance, wandering through the trees."
+message[5] = "Some of our pals dared us to spend the night  in the forest. I'm not one to turn down a dare, but...";
 //newChat(message, "mari");
 newSkit(message,0);</code>
   <enableViews>0</enableViews>
