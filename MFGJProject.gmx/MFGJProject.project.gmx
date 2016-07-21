@@ -42,11 +42,34 @@
       <sprite>sprites\spr_lor_smile</sprite>
       <sprite>sprites\spr_lor_sad</sprite>
     </sprites>
+    <sprites name="Tutorial Room">
+      <sprite>sprites\spr_tree</sprite>
+      <sprite>sprites\spr_flashlight</sprite>
+      <sprite>sprites\spr_flowers</sprite>
+      <sprite>sprites\spr_newspaper</sprite>
+    </sprites>
+    <sprites name="Search Room">
+      <sprite>sprites\spr_charm</sprite>
+      <sprite>sprites\spr_mushroom</sprite>
+      <sprite>sprites\spr_ring</sprite>
+      <sprite>sprites\spr_cookies</sprite>
+      <sprite>sprites\spr_flower</sprite>
+      <sprite>sprites\spr_rock</sprite>
+      <sprite>sprites\spr_skull</sprite>
+      <sprite>sprites\spr_ticket</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_woods1</background>
     <background>background\bg_woods2</background>
     <background>background\bg_field</background>
+    <background>background\bg_tutorial</background>
+    <backgrounds name="Search Room">
+      <background>background\bg_search1</background>
+      <background>background\bg_search2</background>
+      <background>background\bg_search3</background>
+      <background>background\bg_search4</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -62,10 +85,20 @@
     <object>objects\obj_dialogue</object>
     <object>objects\obj_vndialogue</object>
     <object>objects\README</object>
+    <objects name="tutorial objects">
+      <object>objects\obj_tree</object>
+      <object>objects\obj_flashlight</object>
+      <object>objects\obj_flowers</object>
+      <object>objects\obj_newspaper</object>
+    </objects>
+    <objects name="search objects">
+      <object>objects\object9</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\room1</room>
+    <room>rooms\room2_tutorial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
