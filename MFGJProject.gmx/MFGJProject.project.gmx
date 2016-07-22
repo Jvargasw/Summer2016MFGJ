@@ -92,13 +92,26 @@
       <object>objects\obj_newspaper</object>
     </objects>
     <objects name="search objects">
-      <object>objects\object9</object>
+      <object>objects\obj_charm</object>
+      <object>objects\obj_mushroom</object>
+      <object>objects\obj_ring</object>
+      <object>objects\obj_cookies</object>
+      <object>objects\obj_flower</object>
+      <object>objects\obj_rock</object>
+      <object>objects\obj_skull</object>
+      <object>objects\obj_ticket</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\room2_tutorial</room>
+    <rooms name="Search Room">
+      <room>rooms\room3_search1</room>
+      <room>rooms\room3_search2</room>
+      <room>rooms\room3_search3</room>
+      <room>rooms\room3_search4</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
