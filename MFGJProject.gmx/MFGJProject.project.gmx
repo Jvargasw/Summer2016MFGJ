@@ -76,6 +76,12 @@
       <background>background\bg_search3</background>
       <background>background\bg_search4</background>
     </backgrounds>
+    <backgrounds name="Maze Room">
+      <background>background\maze1</background>
+      <background>background\maze2</background>
+      <background>background\maze3</background>
+      <background>background\maze4</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
