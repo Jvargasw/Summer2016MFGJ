@@ -133,6 +133,12 @@
       <room>rooms\search3_south</room>
       <room>rooms\search4_west</room>
     </rooms>
+    <rooms name="Maze Room">
+      <room>rooms\maze_choice1</room>
+      <room>rooms\maze_choice2</room>
+      <room>rooms\maze_choice3</room>
+      <room>rooms\maze_choice4</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
