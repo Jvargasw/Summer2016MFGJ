@@ -6,7 +6,9 @@
   <NewExtensions>
     <extension index="0">extensions\Advanced Dialogue Box</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\pickup_item</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Character Sprites">
       <sprite>sprites\spr_mari_neutral</sprite>
@@ -61,6 +63,7 @@
     <sprites name="Menu">
       <sprite>sprites\sprite45</sprite>
     </sprites>
+    <sprite>sprites\checkmark</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_woods1</background>
@@ -107,6 +110,7 @@
         <object>objects\controller_north</object>
         <object>objects\controller_south</object>
         <object>objects\controller_east</object>
+        <object>objects\controller_items</object>
         <object>objects\controller_west</object>
       </objects>
     </objects>
