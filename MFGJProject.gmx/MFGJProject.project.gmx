@@ -58,6 +58,9 @@
       <sprite>sprites\spr_skull</sprite>
       <sprite>sprites\spr_ticket</sprite>
     </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\sprite45</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_woods1</background>
@@ -100,17 +103,25 @@
       <object>objects\obj_rock</object>
       <object>objects\obj_skull</object>
       <object>objects\obj_ticket</object>
+      <objects name="Controllers">
+        <object>objects\controller_north</object>
+        <object>objects\controller_south</object>
+        <object>objects\controller_east</object>
+        <object>objects\controller_west</object>
+      </objects>
     </objects>
+    <object>objects\MainMenu_button1</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\MainMenu</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\room2_tutorial</room>
     <rooms name="Search Room">
-      <room>rooms\room3_search1</room>
-      <room>rooms\room3_search2</room>
-      <room>rooms\room3_search3</room>
-      <room>rooms\room3_search4</room>
+      <room>rooms\search1_north</room>
+      <room>rooms\search2_east</room>
+      <room>rooms\search3_south</room>
+      <room>rooms\search4_west</room>
     </rooms>
   </rooms>
   <help>
