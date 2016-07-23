@@ -3,14 +3,23 @@
   <caption></caption>
   <width>800</width>
   <height>600</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
-  <showcolour>-1</showcolour>
-  <code></code>
+  <colour>0</colour>
+  <showcolour>0</showcolour>
+  <code>//message[0] = "\0Normal  \1Shaky  \2Color  \3Shaky Color  \4Wavy  \5Gradient  \6Wavy Gradient";
+message[0] = "Mari: I wonder what the two of them saw that made them ditch me like a bunch of losers?";
+message[1] = "Mari: It couldn’t have been that bad...";
+message[2] = "I remember the rumors saying that people saw glowing orbs around the forest.";
+message[3] = "What are they called again? Uhm...Oh! Will o' Wisps!";
+message[4] = "I heard they lead people astray to their death...or something along those lines...";
+message[5] = "....Wait a second. What's that over there?";
+message[6] = "I turned off the flashlight to be sure my eyes weren't playing tricks on me, but sure enough...there seems to be a faint, purple orb... floating.";
+message[7] = "...Towards me.";
+newSkit(message,0);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -31,7 +40,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="maze1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_meet1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -50,7 +59,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="obj_camera" x="0" y="0" name="inst_4BD1F532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
