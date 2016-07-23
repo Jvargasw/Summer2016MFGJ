@@ -6,11 +6,24 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
-  <persistent>-1</persistent>
+  <speed>60</speed>
+  <persistent>0</persistent>
   <colour>12632256</colour>
-  <showcolour>-1</showcolour>
-  <code></code>
+  <showcolour>0</showcolour>
+  <code>//message[0] = "\0Normal  \1Shaky  \2Color  \3Shaky Color  \4Wavy  \5Gradient  \6Wavy Gradient";
+message[0] = "Wisp: \4This is where I woke up."
+message[1] = "Mari: Huh. This is a pretty empty clearing compared to the rest of forest.";
+message[2] = "Mari: So what should I be looking for?";
+message[3] = "Wisp: \4Anything, really! I'm not sure what to find myself, but as a human you could pick up some things that will might help jog my memory."
+message[4] = "Mari: How much stuff do you think it will take?"
+message[5] = "Wisp: \4I'll need everything. If I dont fully find out my identity, or how I died, I don't think I'll be able to pass on.";
+message[6] = "Mari: Okay. At least it'll be easier to look for stuff around here.";
+message[7] = "Wisp: \4Let's find as much as we can! We need to get every single thing!";
+message[8] = "[The complete version will include dialogue when you pick items up. Expect really bad puns and videogame references!]";
+message[9] = "[Press the LEFT and RIGHT Arrow Keys to navigate each of the 4 areas]";
+message[10] = "[Click the items to EXAMINE or COLLECT them]";
+message[11] = "[Collect all items to get to the next area]";
+newChat(message, 0);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -53,8 +66,9 @@
   <instances>
     <instance objName="obj_ring" x="334" y="451" name="inst_937B72B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_charm" x="632" y="563" name="inst_1414D591" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="controller_north" x="0" y="0" name="inst_CFF92C3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="controller_items" x="384" y="320" name="inst_C4CF7255" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_camera" x="32" y="0" name="inst_E83D18FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="controller_north" x="320" y="192" name="inst_EBA1BBA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="controller_items" x="256" y="192" name="inst_16178B4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

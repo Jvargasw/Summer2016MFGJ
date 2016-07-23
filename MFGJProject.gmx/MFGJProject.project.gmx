@@ -49,6 +49,7 @@
       <sprite>sprites\spr_flashlight</sprite>
       <sprite>sprites\spr_flowers</sprite>
       <sprite>sprites\spr_newspaper</sprite>
+      <sprite>sprites\spr_entrance</sprite>
     </sprites>
     <sprites name="Search Room">
       <sprite>sprites\spr_charm</sprite>
@@ -65,9 +66,10 @@
       <sprite>sprites\sprite46</sprite>
     </sprites>
     <sprite>sprites\checkmark</sprite>
+    <sprite>sprites\spr_dialogue</sprite>
     <sprites name="Maze Room">
-      <sprite>sprites\spr_right</sprite>
       <sprite>sprites\spr_wrong</sprite>
+      <sprite>sprites\spr_right</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -87,6 +89,8 @@
       <background>background\maze3</background>
       <background>background\maze4</background>
     </backgrounds>
+    <background>background\bg_meet1</background>
+    <background>background\bg_meet2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -99,14 +103,15 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_camera</object>
-    <object>objects\obj_dialogue</object>
     <object>objects\obj_vndialogue</object>
+    <object>objects\obj_dialogue</object>
     <object>objects\README</object>
     <objects name="tutorial objects">
-      <object>objects\obj_tree</object>
+      <object>objects\obj_entrance</object>
       <object>objects\obj_flashlight</object>
       <object>objects\obj_flowers</object>
       <object>objects\obj_newspaper</object>
+      <object>objects\obj_tree</object>
     </objects>
     <objects name="search objects">
       <object>objects\obj_charm</object>
@@ -118,25 +123,27 @@
       <object>objects\obj_skull</object>
       <object>objects\obj_ticket</object>
       <objects name="Controllers">
-        <object>objects\controller_north</object>
-        <object>objects\controller_south</object>
-        <object>objects\controller_east</object>
         <object>objects\controller_items</object>
+        <object>objects\controller_east</object>
+        <object>objects\controller_south</object>
+        <object>objects\controller_north</object>
         <object>objects\controller_west</object>
       </objects>
     </objects>
+    <objects name="maze room objects">
+      <object>objects\obj_wrong</object>
+      <object>objects\obj_right</object>
+    </objects>
     <object>objects\MainMenu_button1</object>
     <object>objects\MainMenu_Button2</object>
-    <objects name="Maze Room">
-      <object>objects\obj_right</object>
-      <object>objects\obj_wrong</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\MainMenu</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\room2_tutorial</room>
+    <room>rooms\room3</room>
+    <room>rooms\room4</room>
     <rooms name="Search Room">
       <room>rooms\search1_north</room>
       <room>rooms\search2_east</room>
