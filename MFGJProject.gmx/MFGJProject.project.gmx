@@ -138,7 +138,6 @@
     <object>objects\MainMenu_Button2</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\MainMenu</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\room2_tutorial</room>
