@@ -64,6 +64,7 @@ newChat(message, 0);</code>
     <instance objName="obj_right" x="0" y="0" name="inst_84F47E53" locked="0" code="" scaleX="7" scaleY="13" colour="16777215" rotation="0"/>
     <instance objName="obj_wrong" x="288" y="0" name="inst_BD9305C1" locked="0" code="" scaleX="7" scaleY="13" colour="16777215" rotation="0"/>
     <instance objName="obj_wrong" x="576" y="0" name="inst_CB56CF5A" locked="0" code="" scaleX="7" scaleY="13" colour="16777215" rotation="0"/>
+    <instance objName="obj_camera" x="32" y="544" name="inst_C3E5546C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

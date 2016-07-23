@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_wrong" x="0" y="0" name="inst_A78918A4" locked="0" code="" scaleX="7" scaleY="12" colour="16777215" rotation="0"/>
     <instance objName="obj_wrong" x="320" y="0" name="inst_B01E396E" locked="0" code="" scaleX="7" scaleY="12" colour="16777215" rotation="0"/>
-    <instance objName="obj_right" x="576" y="0" name="inst_AAB3B52B" locked="0" code="" scaleX="7" scaleY="12" colour="16777215" rotation="0"/>
+    <instance objName="obj_gameover" x="576" y="0" name="inst_5446BC56" locked="0" code="" scaleX="7" scaleY="12" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

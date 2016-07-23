@@ -133,6 +133,7 @@
     <objects name="maze room objects">
       <object>objects\obj_wrong</object>
       <object>objects\obj_right</object>
+      <object>objects\obj_gameover</object>
     </objects>
     <object>objects\MainMenu_button1</object>
     <object>objects\MainMenu_Button2</object>
