@@ -3,76 +3,14 @@
   <caption></caption>
   <width>800</width>
   <height>600</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>0</colour>
-  <showcolour>0</showcolour>
-  <code>global.emotionMari = spr_mari_surprise;
-global.emotionWisp = spr_wisp_surprise;
-
-global.mariVisible = true;
-global.wispVisible = false;
-
-
-//message[0] = "\0Normal  \1Shaky  \2Color  \3Shaky Color  \4Wavy  \5Gradient  \6Wavy Gradient";
-message[0] = "Mari: Shoot, what do I do?! Am I gonna die already!?";
-message[1] = "Mari: Don't hurt me, wispy thingy!  I've still got a couple years of college left! Let me live!!!";
-message[2] = "W: Visible";
-message[3] = "Wisp: \4Oh thank goodness! It's been so long since I've seen a human wandering around here!";
-message[4] = "Mari: ...Huh?";
-message[5] = "Wisp: \4Are you alright? Oh, please don't run away! Whenever I've tried asking for a human to help, they run away!";
-message[6] = "M: Neutral Sweat";
-message[7] = "Mari: Uh...wait...you're not going to lead me to my inevitable death?";
-message[8] = "Wisp: \4What are you talking about? I'm not going to hurt you, don't worry! I'm just asking for help. Please!";
-message[9] = "M: Surprise";
-message[10] = "Mari: Wait, give me a second to get a grip back on reality!";
-message[11] = "M: Smile";
-message[12] = "Mari: ...OK, I'm good. So, you are?";
-message[13] = "W: Smile";
-message[14] = "Wisp \4A Wisp!";
-message[15] = "M: Neutral";
-message[16] = "Mari: And... You need me to help you somehow?";
-message[17] = "W: Surprise";
-message[18] = "Wisp: \4Yes! I’ve been looking for ages trying to find someone, and I think a human is the only one able to figure everything out."
-message[19] = "Mari: What did you need help with?";
-message[20] = "W: Sad";
-message[21] = "Wisp: \4You see...a lot of wisps are the spirits of those who have died and can't pass on.";
-message[22] = "Wisp: \4And I've been wandering around aimlessly looking for clues for who I am, and how I died!";
-message[23] = "W: Neutral";
-message[24] = "Wisp: \4It's the only way I can finally pass on without regrets. A human will surely be able to help me figure this out!";
-message[25] = "Wisp: \4Will you help me?";
-message[26] = "M: Thinking";
-message[27] = "Mari: Uhm...";
-message[28] = "Mari: (What should I do? I never really expected the rumors to be true… And if that's the case, following this thing should be the last thing I do! But... They’re practically begging for help...]";
-message[29] = "M: Smile";
-message[30] = "Mari: Sure, might as well. If you've been waiting for years for someone to help you, I guess I can try helping you out.";
-message[31] = "W: Happy";
-message[32] = "Wisp: \4Hooray! Thank you so much! Here, to help, I'll lead you to where I first woke up. There must been lots of clues around my death there!";
-message[33] = "M: Happy";
-message[34] = "Mari: Sounds like a plan!";
-message[35] = "M: Smile";
-message[36] = "Mari: Oh, I'm Mari, by the way. What should I call you?";
-message[37] = "W: Neutral";
-message[38] = "Wisp: \4Huh? I mean...I don't really have one... I never thought much about a name for myself.";
-message[39] = "M: Thinking";
-message[40] = "Mari: How about Wispy? Wisper?";
-message[41] = "Wisp: \4Uhm--";
-message[42] = "M: Smile";
-message[43] = "Mari: Willy? Will o roo? Willy the Wisp?";
-message[44] = "Wisp: \4.....";
-message[45] = "M: Happy";
-message[46] = "Mari: Will-o-Wonka!";
-message[47] = "W: Sweat";
-message[48] = "Wisp: .......";
-message[49] = "W: Smile";
-message[50] = "Wisp: \4Let's just go with Wisp.";
-message[51] = "Mari: Ok! Wisp it is. Lead the way, Wisp!";
-message[52] = "Surprisingly, I'm starting to feel like I can trust this wisp. Maybe it's just because it can talk and seems to be honest about finding out about who it is.";
-message[53] = "Either way, tonight is bound to be fun somehow!";
-newSkit(message,2);</code>
+  <colour>12632256</colour>
+  <showcolour>-1</showcolour>
+  <code></code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -93,7 +31,7 @@ newSkit(message,2);</code>
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_meet2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_search2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -103,17 +41,18 @@ newSkit(message,2);</code>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_camera" x="0" y="0" name="inst_4BD1F532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cookies" x="271" y="478" name="inst_E34DAE43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="542" y="390" name="inst_4053B4AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -9,12 +9,8 @@
   <speed>30</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
-  <showcolour>0</showcolour>
-  <code>//message[0] = "\0Normal  \1Shaky  \2Color  \3Shaky Color  \4Wavy  \5Gradient  \6Wavy Gradient";
-message[0] = "Well, here's the entrance. Am I ready to go in?";
-message[1] = "[TUTORIAL!]";
-message[2] = "[Click objects around the area to examine them! In the next level you will collect important objects!]";
-newChat(message,0);</code>
+  <showcolour>-1</showcolour>
+  <code></code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -55,12 +51,10 @@ newChat(message,0);</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_flashlight" x="282" y="519" name="inst_2BFBB1FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_flowers" x="185" y="454" name="inst_7A904DBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_newspaper" x="476" y="479" name="inst_214BA8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree" x="400" y="316" name="inst_B95B1DF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_entrance" x="392" y="291" name="inst_0B2B0975" locked="0" code="" scaleX="0.5" scaleY="0.600000023841858" colour="16777215" rotation="0"/>
-    <instance objName="obj_camera" x="9" y="14" name="inst_EA446435" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree" x="400" y="316" name="inst_7F00BF0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flashlight" x="282" y="518" name="inst_140B5CA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers" x="185" y="454" name="inst_78A79217" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_newspaper" x="478" y="480" name="inst_5E82307C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -19,7 +19,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>other</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -31,7 +31,7 @@ timer = 0;
 cutoff = 0;
 
 message[0] = "";
-numOfPeople = 0;
+portrait = "none";
 
 t = 0;
 //Amplitude &amp; Freq for Wavy Text
@@ -106,72 +106,39 @@ if (message_end &gt; 0)
     var charWidth = 15;
     var charHeight = 25;
     //How many characters allowed in each line
-    //if (portrait == "none") var lineEnd = 50;
-    var lineEnd = 45;
+    if (portrait == "none") var lineEnd = 50;
+    else var lineEnd = 45;
     //Variables for spacing characters
     var line = 0;
     var space = 0;
     var i = 1;
     //Delay time between printing each character
-    var delay = .5;
-
-    
-    //character emotion variables
-    
+    var delay = 1;
     
     //Draw Portrait
-    switch(numOfPeople)
+    switch(portrait)
+    {
+        case "none":
         {
-            case 1:
-            {
-                draw_sprite(global.emotionMari, 0, 250, 600);
-                break;
-            }
-            case 2:
-            {
-                draw_sprite(global.emotionMari, 0, 0, 600);
-                draw_sprite(global.emotionWisp, 0, 600, 250);
-                break;
-            }
-            case 3:
-            {   
-                if(global.pal2Visible)draw_sprite(global.emotionPal2,0,500,600);
-                if(global.pal1Visible)draw_sprite(global.emotionPal1,0,250,600);
-                draw_sprite(global.emotionMari,0,0,600);
-                break;
-            }
-            case 4:
-            {
-                draw_sprite(global.emotionMari, 0, 0, 600);
-                draw_sprite(global.emotionLorelei, 0, 800, 600);
-                break;   
-            }    
+            break;
         }
-    
-    draw_sprite(spr_dialogue, 0,0,600);
-    //switch(portrait)
-   // {
-   //     case "none":
-     //   {
-    //        break;
-    //    }
-    ///    case "diest":
-    //    {
+        case "diest":
+        {
             //draw_sprite(spr_portrait, 0, 5, view_hview[0]-55);
-    //        break;
-     //   }
-    //    case "mari":
-     //   {
+            break;
+        }
+        case "mari":
+        {
             //draw_sprite(spr_mari_neutral, 0, 0, 600);
 
-      //      break;
-      //  }
-    //}
+            break;
+        }
+    }
     
     //Text Position
     var tY = view_hview[0]-150;
-   // if (portrait == "none") var tX = 5;
-    var tX = 60;
+    if (portrait == "none") var tX = 5;
+    else var tX = 60;
     
     //Next message or end dialogue
     if (cutoff == string_length(message[message_current]))
@@ -207,159 +174,9 @@ if (message_end &gt; 0)
         else timer++;
     }
     
-    //Expression Change
-    if(string_pos("M:",message[message_current])){
-
-        if(string_pos("Neutral",message[message_current])){
-            global.emotionMari = spr_mari_neutral;
-            message_current++;
-        }
-        if(string_pos("Neutral Sweat",message[message_current])){
-            global.emotionMari = spr_mari_neutral_sweat;
-            message_current++;
-        }
-        if(string_pos("Happy",message[message_current])){
-            global.emotionMari = spr_mari_happy;
-            message_current++;
-        }
-        if(string_pos("Happy Sweat",message[message_current])){
-            global.emotionMari = spr_mari_happy_sweat;
-            message_current++;
-        }
-        if(string_pos("Sad",message[message_current])){
-            global.emotionMari = spr_mari_sad;
-            message_current++;
-        }
-        if(string_pos("Cry",message[message_current])){
-            global.emotionMari = spr_mari_cry;
-            message_current++;
-        }
-        if(string_pos("Sad Sweat",message[message_current])){
-            global.emotionMari = spr_mari_sad_sweat;
-            message_current++;
-        }
-        if(string_pos("Surprise",message[message_current])){
-            global.emotionMari = spr_mari_surprise;
-            message_current++;
-        }
-        if(string_pos("Smile",message[message_current])){
-            global.emotionMari = spr_mari_smile;
-            message_current++;
-        }
-        if(string_pos("Smile Sweat",message[message_current])){
-            global.emotionMari = spr_mari_smile_sweat;
-            message_current++;
-        }
-        if(string_pos("Surprise Sweat",message[message_current])){
-            global.emotionMari = spr_mari_surprise_sweat;
-            message_current++;
-        }
-        if(string_pos("Thinking",message[message_current])){
-            global.emotionMari = spr_mari_thinking;
-            message_current++;
-        }
-        if(string_pos("Thinking Sweat",message[message_current])){
-            global.emotionMari = spr_mari_thinking_sweat;
-            message_current++;
-        }
-        if(string_pos("Invisible",message[message_current])){
-            global.mariVisible = false;
-            message_current++;
-        }
-        if(string_pos("Visible",message[message_current])){
-            global.mariVisible = true;
-            message_current++;
-        }      
-        
-    }
-    
-    else if(string_pos("W:",message[message_current])){
-
-        if(string_pos("Neutral",message[message_current])){
-            global.emotionWisp = spr_wisp_neutral;
-            message_current++;
-        }
-        if(string_pos("Smile",message[message_current])){
-            global.emotionWisp = spr_wisp_smile;
-            message_current++;
-        }
-        if(string_pos("Happy",message[message_current])){
-            global.emotionWisp = spr_wisp_happy;
-            message_current++;
-        }
-        if(string_pos("Sad",message[message_current])){
-            global.emotionWisp = spr_wisp_sad;
-            message_current++;
-        }
-        if(string_pos("Surprise",message[message_current])){
-            global.emotionWisp = spr_wisp_surprise;
-            message_current++;
-        }
-        if(string_pos("Sweat",message[message_current])){
-            global.emotionWisp = spr_wisp_sweat;
-            message_current++;
-        }
-        if(string_pos("Visible",message[message_current])){
-            global.wispVisible = true;
-            message_current++;
-        } 
-    }
-    
-    else if(string_pos("B:",message[message_current])){
-
-        if(string_pos("Confident",message[message_current])){
-            global.emotionPal1 = spr_pal1_confident;
-            message_current++;
-        }
-        if(string_pos("Neutral",message[message_current])){
-            global.emotionPal1 = spr_pal1_neutral;
-            message_current++;
-        }
-        if(string_pos("Terrified",message[message_current])){
-            global.emotionPal1 = spr_pal1_terrified;
-            message_current++;
-        }
-        if(string_pos("Uneasy",message[message_current])){
-            global.emotionPal1 = spr_pal1_uneasy;
-            message_current++;
-        }
-        if(string_pos("Invisible",message[message_current])){
-            global.pal1Visible = false;
-            message_current++;
-        } 
-    }
-    
-    else if(string_pos("A:",message[message_current])){
-
-        if(string_pos("Confident",message[message_current])){
-            global.emotionPal2 = spr_pal2_confident;
-            message_current++;
-        }
-        if(string_pos("Neutral",message[message_current])){
-            global.emotionPal2 = spr_pal2_neutral;
-            message_current++;
-        }
-        if(string_pos("Terrified",message[message_current])){
-            global.emotionPal2 = spr_pal2_terrified;
-            message_current++;
-        }
-        if(string_pos("Uneasy",message[message_current])){
-            global.emotionPal2 = spr_pal2_uneasy;
-            message_current++;
-        } 
-        if(string_pos("Invisible",message[message_current])){
-            global.pal2Visible = false;
-            message_current++;
-        }  
-    }
-    
     //Text
     while(i &lt;= string_length(message[message_current]) &amp;&amp; i &lt;= cutoff)
     {   
-
-        
-        //Check for an expression change
-        
         //check for modifier
         if (string_char_at(message[message_current], i) == "\")
         {
@@ -436,6 +253,7 @@ if (message_end &gt; 0)
         space++;
         i++;
     }
+    
     
     
 }
